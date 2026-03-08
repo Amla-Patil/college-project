@@ -1,78 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>College Management System</title>
-    <link rel="stylesheet" href="style.css">
+<title>Faculty Student Ratio System</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>College Management System</h1>
+<header class="navbar">
+  <div class="logo">College Logo</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Departments</a>
+    <a href="#">Contact</a>
+    <a href="login.html">Login</a>
+  </nav>
+</header>
 
-<div class="container">
-
-<!-- Department -->
-<section>
-<h2>Add Department</h2>
-
-<input type="number" id="dept_id" placeholder="Department ID">
-<input type="text" id="dept_name" placeholder="Department Name">
-
-<select id="is_allied">
-<option value="true">Allied</option>
-<option value="false">Not Allied</option>
-</select>
-
-<button onclick="addDepartment()">Add Department</button>
+<section class="hero">
+  <h1>Faculty Student Ratio Management System</h1>
+  <p>Monitoring faculty data and student intake for NAAC Criterion 5.</p>
 </section>
 
-
-<!-- Program -->
-<section>
-<h2>Add Program</h2>
-
-<input type="number" id="program_id" placeholder="Program ID">
-<input type="text" id="program_name" placeholder="Program Name">
-<input type="number" id="sanctioned_intake" placeholder="Sanctioned Intake">
-<input type="number" id="program_duration" placeholder="Program Duration">
-<input type="number" id="dept_program" placeholder="Department ID">
-
-<button onclick="addProgram()">Add Program</button>
+<section class="stats">
+  <div class="card">Total Departments: 12</div>
+  <div class="card">Total Programs: 45</div>
+  <div class="card">Total Faculty: 150</div>
+  <div class="card">Total Students: 3200</div>
 </section>
 
-
-<!-- Faculty -->
-<section>
-<h2>Add Faculty</h2>
-
-<input type="number" id="faculty_id" placeholder="Faculty ID">
-<input type="text" id="faculty_name" placeholder="Faculty Name">
-<input type="text" id="pan_no" placeholder="PAN Number">
-<input type="text" id="degree" placeholder="Highest Degree">
-<input type="text" id="specialization" placeholder="Specialization">
-<input type="date" id="joining_date">
-
-<button onclick="addFaculty()">Add Faculty</button>
-
-</section>
-
-
-<!-- Academic Year -->
-<section>
-
-<h2>Add Academic Year</h2>
-
-<input type="number" id="year_id" placeholder="Year ID">
-<input type="text" id="year_code" placeholder="Year Code">
-<input type="text" id="academic_session" placeholder="Session">
-
-<button onclick="addYear()">Add Year</button>
-
-</section>
-
-</div>
-
-<script src="script.js"></script>
+<footer>
+  <p>College Address | Email | Social Links</p>
+</footer>
 
 </body>
 </html>
