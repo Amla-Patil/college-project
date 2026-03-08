@@ -1,47 +1,47 @@
 body{
 font-family: Arial;
+margin:0;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px;
+background:#1e3a8a;
+color:white;
+}
+
+.hero{
+text-align:center;
+padding:60px;
 background:#f4f4f4;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
 padding:20px;
 }
 
-h1{
-text-align:center;
-}
-
-.container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:20px;
-}
-
-section{
+.card{
 background:white;
 padding:20px;
 border-radius:10px;
 box-shadow:0 2px 5px rgba(0,0,0,0.1);
 }
 
-
-form{
-padding:10px;
+.login-bg{
+background:url('../assets/college.jpg') center/cover no-repeat;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-input, select{
-display:block;
-width:100%;
-margin:10px 0;
-padding:8px;
-}
-
-button{
-background:#2c7be5;
-color:white;
-border:none;
-padding:10px;
-cursor:pointer;
-border-radius:5px;
-}
-
-button:hover{
-background:#1a5ed8;
+.login-box{
+background:white;
+padding:30px;
+border-radius:10px;
+width:300px;
 }
